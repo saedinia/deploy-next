@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/deploy-next",
   output: "export",
   reactStrictMode: true,
-
-  // Add basePath
-  basePath: "/deploy-next",
 };
 
 export default nextConfig;
