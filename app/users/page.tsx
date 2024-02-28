@@ -8,7 +8,7 @@ const UsersPage = async () => {
       <h1>Users</h1>
       <ul>
         {users.map((user: { id: number; name: string }) => (
-          <li>{user.id + "." + user.name}</li>
+          <li key={user.name}>{user.id + "." + user.name}</li>
         ))}
       </ul>
     </div>
